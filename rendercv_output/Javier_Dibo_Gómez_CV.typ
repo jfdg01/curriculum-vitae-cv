@@ -95,11 +95,11 @@
 )
 
 
-== Resumen
+== De un vistazo
 
-Ingeniero Infórmatico especializado en Ciberseguridad a través de un Doble Máster
+Ingeniero Informático especializado en Ciberseguridad a través de un Doble Máster, me encanta aprender y desarrollar software.
 
-== Educación
+== Perfil Académico
 
 #education-entry(
   [
@@ -131,29 +131,21 @@ Ingeniero Infórmatico especializado en Ciberseguridad a través de un Doble Má
   ],
 )
 
-== Idiomas
-
-#strong[Español:] Nativo
-
-#strong[Inglés:] Cambridge C1
-
-#strong[Francés:] DELF B1
-
-== Projectos
+== Projectos Destacados
 
 #regular-entry(
   [
     #strong[Portfolio artístico (#link("https://cardenaspacheco.es")[#underline(offset: 1.3pt, stroke: 1.1pt)[cardenaspacheco.es]])]
 
-    #summary[#emph[Página web para la presentación de obras para la artista Carmen Cárdenas Pacheco]]
+    #summary[#emph[Diseñé una página web para la presentación de obras para la artista Carmen Cárdenas Pacheco]]
 
-    - Svelte 5, Typescript
+    - Svelte 5, Typescript, Vercel
 
-    - Especialización en rendimiento y SEO
+    - Conseguí un rendimiento ejemplar en tiempos de carga y SEO
 
   ],
   [
-    Ago 2025 – Oct 2025
+    Ago 2025
 
   ],
 )
@@ -162,39 +154,73 @@ Ingeniero Infórmatico especializado en Ciberseguridad a través de un Doble Má
   [
     #strong[GymTracker (#link("https://github.com/jfdg01/gym-tracker-app")[#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]])]
 
-    #summary[#emph[App móvil para el seguimiento dinámico de entrenamientos]]
+    #summary[#emph[Desarrollé una aplicación móvil utilizando un algoritmo personalizado de sobrecarga progresiva priorizando la privacidad del usuario, nada de cuentas ni de nube]]
 
     - ReactNative + Gluestacks
 
     - 100\% local, código abierto
 
-    - Algoritmo individualizado para la sobrecarga progresiva
-
   ],
   [
-    Oct 2025 – presente
+    Oct 2025
 
   ],
 )
 
 #regular-entry(
   [
-    #strong[Trabajos de Fin Master]
+    #strong[Orquestrador de IA multiagente]
 
-    #summary[#emph[Aplicación para la gestión completa de una academia]]
+    #summary[#emph[Implementé un orquestador de IA multiagente para la automatización de detección de errores en la traza de ejecución de programas y su subsecuente análisis y explotación de vulnerabilidades de seguridad de LLMs]]
 
-    - Integrado mediante dos TFM
+    - Integrado mediante dos TFM a lo largo de 2 años
 
-    - Java (SpringBoot), Docker, PostreSQL, Svelte 5, SvelteKit, Stripe
-
-    - App full-stack con arquitectura de microservicios y características de ciberseguridad profesionales
+    - LangChain, Python, Docker
 
   ],
   [
-    Nov 2025 – presente
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Explotación de vulnerabilidades en LLMs]
+
+    #summary[Para el sistema de orquestación de IA multiagente, implementé un sistema de explotación de vulnerabilidades en LLMs y ]
+
+    - dsads
+
+  ],
+  [
+  ],
+)
+
+== Experiencia Empresarial
+
+#regular-entry(
+  [
+    #strong[Tienda de alimentación familiar \"Los Argentinos\"], Dependiente a tiempo parcial.
+
+    #summary[Desde el inicio de mi etapa universitaria, he compatibilizado mis estudios con el trabajo en el negocio familiar]
+
+    - Amplia experiencia en atención al cliente y trato personal cercano
+
+    - Gestión de conflictos y problemas, responsabilidad financiera, capacidad de organización
+
+  ],
+  [
+    Jaén, España
+
+    Jul 2019 – presente
 
   ],
 )
+
+== Idiomas
+
+#strong[Español:] Nativo
+
+#strong[Inglés:] Cambridge C1
 
 == Competencias Técnicas
 
@@ -204,13 +230,13 @@ Ingeniero Infórmatico especializado en Ciberseguridad a través de un Doble Má
 
 #strong[Infra:] Git, Kubernetes, Docker, AWS, Amazon Lambda
 
-== Otras Competencias
+== Otras Competencias Relevantes
 
 #regular-entry(
   [
-    #strong[Artes Marciales]
+    #strong[Practicante de Artes Marciales]
 
-    #summary[Cinturón azul en Hung Gar Kung Fu]
+    #summary[Cinturón azul en Kung Fu. Mi entrenamiento me proporciona disciplina, concentración y autocompresión]
 
   ],
   [
@@ -221,9 +247,9 @@ Ingeniero Infórmatico especializado en Ciberseguridad a través de un Doble Má
 
 #regular-entry(
   [
-    #strong[Charlas]
+    #strong[Habilidades Comunicativas]
 
-    #summary[Google GDC: \"Cómo introducirse a la ciberseguridad\"]
+    #summary[Ponente en una charla de Google GDC titulada: \"Cómo introducirse a la ciberseguridad\" ante 70 personas]
 
   ],
   [

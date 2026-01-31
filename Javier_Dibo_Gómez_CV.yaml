@@ -12,9 +12,12 @@ cv:
     - network: GitHub
       username: jfdg01
   sections:
-    Resumen:
-      - Ingeniero Infórmatico especializado en Ciberseguridad a través de un Doble Máster
-    Educación:
+    
+    De un vistazo:
+      - Ingeniero Informático especializado en Ciberseguridad a través de un Doble Máster,
+        me encanta aprender y desarrollar software.
+    
+    Perfil Académico:
       - institution: Universidad de Jaén
         area: Ingeniería Informática y Ciberseguridad
         degree: Doble Máster
@@ -33,48 +36,57 @@ cv:
         location: Jaén, España
         highlights:
           - "Especialización en Ingeniería del Software e Informática Empresarial"
-    # Experiencia Empresarial:
-    #  - company: ???
-    #    position: Interno en Prácticas
-    #    date:
-    #    start_date: 2026-06
-    #    end_date: present
-    #    location: Jaén, España
-    #    summary:
-    #    highlights:
-    #      - Cositas
+    
+    Projectos Destacados:
+      - name: "Portfolio artístico ([#underline(offset: 1.3pt, stroke: 1.1pt)[cardenaspacheco.es]](https://cardenaspacheco.es))"
+        date: 2025-08
+        summary: "*Diseñé una página web para la presentación de obras para la artista Carmen Cárdenas Pacheco*"
+        highlights:
+          - Svelte 5, Typescript, Vercel
+          - Conseguí un rendimiento ejemplar en tiempos de carga y SEO
+      
+      - name: "GymTracker ([#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/gym-tracker-app))"
+        date: 2025-10
+        summary: "*Desarrollé una aplicación móvil utilizando un algoritmo personalizado de sobrecarga progresiva priorizando 
+          la privacidad del usuario, nada de cuentas ni de nube*"
+        highlights:
+          - ReactNative + Gluestacks
+          - "100% local, código abierto"
+      
+      - name: Orquestrador de IA multiagente
+        summary: "*Implementé un orquestador de IA multiagente para la automatización
+          de detección de errores en la traza de ejecución de programas y 
+          su subsecuente análisis y explotación de vulnerabilidades de 
+          seguridad de LLMs*"
+        highlights:
+          - Integrado mediante dos TFM a lo largo de 2 años
+          - LangChain, Python, Docker
+
+      - name: Explotación de vulnerabilidades en LLMs
+        summary: "Para el sistema de orquestación de IA multiagente, 
+          implementé un sistema de explotación de vulnerabilidades en LLMs y "
+        highlights:
+          - dsads
+
+    Experiencia Empresarial:
+      - company: Tienda de alimentación familiar "Los Argentinos"
+        position: Dependiente a tiempo parcial.
+        date:
+        start_date: 2019-07
+        end_date: present
+        location: Jaén, España
+        summary: "Desde el inicio de mi etapa universitaria, he compatibilizado mis estudios con el trabajo en el negocio familiar"
+        highlights:
+          - "Amplia experiencia en atención al cliente y trato personal cercano"
+          - "Gestión de conflictos y problemas, responsabilidad financiera, capacidad de organización"
     Idiomas:
       - label: Español
         details: Nativo
       - label: Inglés
         details: Cambridge C1
-      - label: Francés
-        details: DELF B1
-    Projectos:
-      - name: "Portfolio artístico ([#underline(offset: 1.3pt, stroke: 1.1pt)[cardenaspacheco.es]](https://cardenaspacheco.es))"
-        start_date: 2025-08
-        end_date: 2025-10
-        summary: "*Página web para la presentación de obras para la artista Carmen Cárdenas Pacheco*"
-        highlights:
-          - Svelte 5, Typescript
-          - Especialización en rendimiento y SEO
-      - name: "GymTracker ([#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/gym-tracker-app))"
-        start_date: 2025-10
-        end_date: present
-        summary: "*App móvil para el seguimiento dinámico de entrenamientos*"
-        highlights:
-          - ReactNative + Gluestacks
-          - "100% local, código abierto"
-          - "Algoritmo individualizado para la sobrecarga progresiva"
-      - name: Trabajos de Fin Master
-        summary: "*Aplicación para la gestión completa de una academia*"
-        start_date: 2025-11
-        end_date: present
-        highlights:
-          - Integrado mediante dos TFM
-          - Java (SpringBoot), Docker, PostreSQL, Svelte 5, SvelteKit, Stripe
-          - App full-stack con arquitectura de microservicios y características de ciberseguridad profesionales
-          # - API RESTful, <100ms tiempos de respuesta, 10000+ usuarios
+      # - label: Francés
+      #   details: DELF B1
+    
     Competencias Técnicas:
       - label: Lenguajes
         details: Java, TypeScript, Python, C++
@@ -82,15 +94,16 @@ cv:
         details: Spring Boot, Svelte 5, SvelteKit, React Native
       - label: Infra
         details: Git, Kubernetes, Docker, AWS, Amazon Lambda
-    Otras Competencias:
+    
+    Otras Competencias Relevantes:
       - name: "Practicante de Artes Marciales"
-        summary: Cinturón azul en Hung Gar Kung Fu
+        summary: Cinturón azul en Kung Fu. Mi entrenamiento me proporciona disciplina, concentración y autocompresión
         start_date: 2023
         end_date: present
-      - name: Charlas
-        summary: 'Google GDC: "Cómo introducirse a la ciberseguridad"'
+      - name: Habilidades Comunicativas
+        summary: 'Ponente en una charla de Google GDC titulada: "Cómo introducirse a la ciberseguridad" ante 70 personas'
         date: 2026-02
-
+    
 design:
   theme: classic
   templates:
@@ -271,11 +284,11 @@ settings:
   render_command:
     design:
     locale:
-    typst_path: rendercv_output\NAME_IN_SNAKE_CASE_CV.typ
-    pdf_path: rendercv_output\NAME_IN_SNAKE_CASE_CV.pdf
-    markdown_path: rendercv_output\NAME_IN_SNAKE_CASE_CV.md
-    html_path: rendercv_output\NAME_IN_SNAKE_CASE_CV.html
-    png_path: rendercv_output\NAME_IN_SNAKE_CASE_CV.png
+    typst_path: ./rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: ./rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: ./rendercv_output/NAME_IN_SNAKE_CASE_CV.md
+    html_path: ./rendercv_output/NAME_IN_SNAKE_CASE_CV.html
+    png_path: ./rendercv_output/NAME_IN_SNAKE_CASE_CV.png
     dont_generate_markdown: false
     dont_generate_html: false
     dont_generate_typst: false

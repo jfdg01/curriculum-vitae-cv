@@ -33,16 +33,6 @@ include/
 share/
 pyvenv.cfg
 
-# LaTeX (in case any are generated elsewhere)
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.pdf
-*.toc
-*.xdv
-
 # IDEs
 .vscode/
 .idea/
