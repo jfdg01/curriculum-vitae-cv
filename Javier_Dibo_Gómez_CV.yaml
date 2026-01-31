@@ -83,7 +83,7 @@ cv:
       - label: Infra
         details: Git, Kubernetes, Docker, AWS, Amazon Lambda
     Otras Competencias:
-      - name: "Artes Marciales"
+      - name: "Practicante de Artes Marciales"
         summary: Cinturón azul en Hung Gar Kung Fu
         start_date: 2023
         end_date: present
