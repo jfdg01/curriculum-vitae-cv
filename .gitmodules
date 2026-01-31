@@ -1,0 +1,3 @@
+[submodule "rendercv"]
+	path = rendercv
+	url = https://github.com/rendercv/rendercv
