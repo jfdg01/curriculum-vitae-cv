@@ -2,10 +2,10 @@
 cv:
   name: Javier Dibo Gómez
   location: Jaén, España
-  email: javier.fco.dibo.gomez@gmail.com
+  email: contacto@dibogomez.com
   #photo: images/photo.webp
   phone: +34 622386406
-  website: https://javierdibogomez.com
+  website: https://dibogomez.com
   social_networks:
     - network: LinkedIn
       username: jfdg01
@@ -38,35 +38,39 @@ cv:
           - "Especialización en Ingeniería del Software e Informática Empresarial"
     
     Projectos Destacados:
-      - name: "Portfolio artístico ([#underline(offset: 1.3pt, stroke: 1.1pt)[cardenaspacheco.es]](https://cardenaspacheco.es))"
+      - name: "Portfolio artístico ([#underline(offset: 1.3pt, stroke: 1.1pt)[cardenaspacheco.es]](https://cardenaspacheco.es) · [#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/art-porfolio-cardenas-pachecho))"
         date: 2025-08
-        summary: "*Diseñé una página web para la presentación de obras para la artista Carmen Cárdenas Pacheco*"
+        summary: "*Diseñé y desarrollé la web de presentación de obra de la artista Carmen Cárdenas Pacheco*"
         highlights:
-          - Svelte 5, Typescript, Vercel
-          - Conseguí un rendimiento ejemplar en tiempos de carga y SEO
-      
-      - name: "GymTracker ([#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/gym-tracker-app))"
-        date: 2025-10
-        summary: "*Desarrollé una aplicación móvil utilizando un algoritmo personalizado de sobrecarga progresiva priorizando 
-          la privacidad del usuario, nada de cuentas ni de nube*"
-        highlights:
-          - ReactNative + Gluestacks
-          - "100% local, código abierto"
-      
-      - name: Orquestrador de IA multiagente
-        summary: "*Implementé un orquestador de IA multiagente para la automatización
-          de detección de errores en la traza de ejecución de programas y 
-          su subsecuente análisis y explotación de vulnerabilidades de 
-          seguridad de LLMs*"
-        highlights:
-          - Integrado mediante dos TFM a lo largo de 2 años
-          - LangChain, Python, Docker
+          - Svelte 5, TypeScript, Vercel Edge
+          - "Lighthouse 95+ en rendimiento sirviendo un catálogo de imágenes de obra originales de 5 MB+ cada una"
+          - Optimización de assets, carga diferida y multiidioma para SEO
 
-      - name: Explotación de vulnerabilidades en LLMs
-        summary: "Para el sistema de orquestación de IA multiagente, 
-          implementé un sistema de explotación de vulnerabilidades en LLMs y "
+      - name: "Rebusca ([#underline(offset: 1.3pt, stroke: 1.1pt)[rebusca.dibogomez.com]](https://rebusca.dibogomez.com) · [#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/wallapop-scraper))"
+        summary: "*Cazador de chollos de Wallapop: define búsquedas y te avisa de las mejores ofertas nuevas*"
         highlights:
-          - dsads
+          - "Frontend HTML/CSS/JavaScript vanilla, sin build: repo < 2 MB y carga en < 1 s"
+          - Backend en Python stdlib puro, cero dependencias
+          - En producción en un VPS vía Cloudflare Tunnel
+
+      - name: "TFG — Gestor de academias ([#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/academy-management-app))"
+        summary: "*Plataforma full-stack de gestión de academia: matrícula, calificaciones y pagos*"
+        highlights:
+          - Frontend web en SvelteKit; backend Java 21 + Spring Boot 3.5
+          - Gestión de 1000 usuarios concurrentes
+          - PostgreSQL, control de acceso por roles y pagos con Stripe
+
+      - name: "Lumina ([#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/lumina-mobile))"
+        summary: "*App que convierte una tablet en una caja de luz digital para artistas*"
+        highlights:
+          - React Native
+          - "100% local, código abierto"
+
+      - name: "TFM — Un dron que pilotas hablándole ([#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/jetson))"
+        summary: "*Edge-AI: das una orden en lenguaje natural y el dron detecta, sigue y encuadra el objetivo, todo en el dispositivo*"
+        highlights:
+          - Qwen2-VL-2B afinado y cuantizado (1.65 GB) sobre Jetson Orin Nano a 15 W, sin nube
+          - "62% de grounding on-device y 85% de seguimiento sostenido pese a movimiento y oclusión"
 
     Experiencia Empresarial:
       - company: Tienda de alimentación familiar "Los Argentinos"
@@ -84,16 +88,20 @@ cv:
         details: Nativo
       - label: Inglés
         details: Cambridge C1
-      # - label: Francés
-      #   details: DELF B1
+      - label: Francés
+        details: DELF B2
     
     Competencias Técnicas:
+      - label: Web
+        details: HTML, CSS, JavaScript, GSAP, Svelte 5, SvelteKit, React
       - label: Lenguajes
-        details: Java, TypeScript, Python, C++
-      - label: Frameworks
-        details: Spring Boot, Svelte 5, SvelteKit, React Native
+        details: TypeScript, Java, Python, C++
+      - label: Backend
+        details: Spring Boot, PostgreSQL
+      - label: Control de versiones
+        details: "Dominio total de Git y GitHub (¡échale un ojo a [#underline(offset: 1.3pt, stroke: 1.1pt)[mi GitHub]](https://github.com/jfdg01)!)"
       - label: Infra
-        details: Git, Kubernetes, Docker, AWS, Amazon Lambda
+        details: Docker, Kubernetes, AWS
     
     Otras Competencias Relevantes:
       - name: "Practicante de Artes Marciales"
@@ -103,6 +111,8 @@ cv:
       - name: Habilidades Comunicativas
         summary: 'Ponente en una charla de Google GDC titulada: "Cómo introducirse a la ciberseguridad" ante 70 personas'
         date: 2026-02
+      - name: "Ritmo de trabajo"
+        summary: "¡Trabajo rápido! Itero y entrego sin sacrificar calidad: monté una landing demo de Spider-Man: Brand New Day con GSAP en un solo día"
     
 design:
   theme: classic
@@ -118,6 +128,7 @@ design:
         DATE
   page:
     size: a4
+    show_top_note: true
   #   top_margin: 0.7in
   #   bottom_margin: 0.7in
   #   left_margin: 0.7in
@@ -280,7 +291,7 @@ locale:
   #   - Noviembre
   #   - Diciembre
 settings:
-  current_date: "2026-01-15"
+  current_date: "2026-07-09"
   render_command:
     design:
     locale:

@@ -1,12 +1,14 @@
 // Import the rendercv function and all the refactored components
-#import "@preview/rendercv:0.1.0": *
+#import "@preview/rendercv:0.3.0": *
 
 // Apply the rendercv template with custom configuration
 #show: rendercv.with(
   name: "Javier Dibo Gómez",
+  title: "Javier Dibo Gómez - CV",
   footer: context { [#emph[Javier Dibo Gómez -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Última actualización Ene 2026] ],
+  top-note: [ #emph[Última actualización Jul 2026] ],
   locale-catalog-language: "es",
+  text-direction: ltr,
   page-size: "a4",
   page-top-margin: 0.7in,
   page-bottom-margin: 0.7in,
@@ -67,6 +69,7 @@
   entries-space-between-columns: 0.1cm,
   entries-allow-page-break: false,
   entries-short-second-row: true,
+  entries-degree-width: 1cm,
   entries-summary-space-left: 0cm,
   entries-summary-space-above: 0cm,
   entries-highlights-bullet:  "•" ,
@@ -77,8 +80,8 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 1,
-    day: 15,
+    month: 7,
+    day: 9,
   ),
 )
 
@@ -87,9 +90,9 @@
 
 #connections(
   [#connection-with-icon("location-dot")[Jaén, España]],
-  [#link("mailto:javier.fco.dibo.gomez@gmail.com", icon: false, if-underline: false, if-color: false)[#connection-with-icon("envelope")[javier.fco.dibo.gomez\@gmail.com]]],
+  [#link("mailto:contacto@dibogomez.com", icon: false, if-underline: false, if-color: false)[#connection-with-icon("envelope")[contacto\@dibogomez.com]]],
   [#link("tel:+34-622-38-64-06", icon: false, if-underline: false, if-color: false)[#connection-with-icon("phone")[622 38 64 06]]],
-  [#link("https://javierdibogomez.com/", icon: false, if-underline: false, if-color: false)[#connection-with-icon("link")[javierdibogomez.com]]],
+  [#link("https://dibogomez.com/", icon: false, if-underline: false, if-color: false)[#connection-with-icon("link")[dibogomez.com]]],
   [#link("https://linkedin.com/in/jfdg01", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[jfdg01]]],
   [#link("https://github.com/jfdg01", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[jfdg01]]],
 )
@@ -135,13 +138,15 @@ Ingeniero Informático especializado en Ciberseguridad a través de un Doble Má
 
 #regular-entry(
   [
-    #strong[Portfolio artístico (#link("https://cardenaspacheco.es")[#underline(offset: 1.3pt, stroke: 1.1pt)[cardenaspacheco.es]])]
+    #strong[Portfolio artístico (#link("https://cardenaspacheco.es")[#underline(offset: 1.3pt, stroke: 1.1pt)[cardenaspacheco.es]] · #link("https://github.com/jfdg01/art-porfolio-cardenas-pachecho")[#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]])]
 
-    #summary[#emph[Diseñé una página web para la presentación de obras para la artista Carmen Cárdenas Pacheco]]
+    #summary[#emph[Diseñé y desarrollé la web de presentación de obra de la artista Carmen Cárdenas Pacheco]]
 
-    - Svelte 5, Typescript, Vercel
+    - Svelte 5, TypeScript, Vercel Edge
 
-    - Conseguí un rendimiento ejemplar en tiempos de carga y SEO
+    - Lighthouse 95+ en rendimiento sirviendo un catálogo de imágenes de obra originales de 5 MB+ cada una
+
+    - Optimización de assets, carga diferida y multiidioma para SEO
 
   ],
   [
@@ -152,43 +157,62 @@ Ingeniero Informático especializado en Ciberseguridad a través de un Doble Má
 
 #regular-entry(
   [
-    #strong[GymTracker (#link("https://github.com/jfdg01/gym-tracker-app")[#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]])]
+    #strong[Rebusca (#link("https://rebusca.dibogomez.com")[#underline(offset: 1.3pt, stroke: 1.1pt)[rebusca.dibogomez.com]] · #link("https://github.com/jfdg01/wallapop-scraper")[#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]])]
 
-    #summary[#emph[Desarrollé una aplicación móvil utilizando un algoritmo personalizado de sobrecarga progresiva priorizando la privacidad del usuario, nada de cuentas ni de nube]]
+    #summary[#emph[Cazador de chollos de Wallapop: define búsquedas y te avisa de las mejores ofertas nuevas]]
 
-    - ReactNative + Gluestacks
+    - Frontend HTML\/CSS\/JavaScript vanilla, sin build: repo \< 2 MB y carga en \< 1 s
+
+    - Backend en Python stdlib puro, cero dependencias
+
+    - En producción en un VPS vía Cloudflare Tunnel
+
+  ],
+  [
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[TFG — Gestor de academias (#link("https://github.com/jfdg01/academy-management-app")[#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]])]
+
+    #summary[#emph[Plataforma full-stack de gestión de academia: matrícula, calificaciones y pagos]]
+
+    - Frontend web en SvelteKit; backend Java 21 + Spring Boot 3.5
+
+    - Gestión de 1000 usuarios concurrentes
+
+    - PostgreSQL, control de acceso por roles y pagos con Stripe
+
+  ],
+  [
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Lumina (#link("https://github.com/jfdg01/lumina-mobile")[#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]])]
+
+    #summary[#emph[App que convierte una tablet en una caja de luz digital para artistas]]
+
+    - React Native
 
     - 100\% local, código abierto
 
   ],
   [
-    Oct 2025
-
   ],
 )
 
 #regular-entry(
   [
-    #strong[Orquestrador de IA multiagente]
+    #strong[TFM — Un dron que pilotas hablándole (#link("https://github.com/jfdg01/jetson")[#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]])]
 
-    #summary[#emph[Implementé un orquestador de IA multiagente para la automatización de detección de errores en la traza de ejecución de programas y su subsecuente análisis y explotación de vulnerabilidades de seguridad de LLMs]]
+    #summary[#emph[Edge-AI: das una orden en lenguaje natural y el dron detecta, sigue y encuadra el objetivo, todo en el dispositivo]]
 
-    - Integrado mediante dos TFM a lo largo de 2 años
+    - Qwen2-VL-2B afinado y cuantizado (1.65 GB) sobre Jetson Orin Nano a 15 W, sin nube
 
-    - LangChain, Python, Docker
-
-  ],
-  [
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[Explotación de vulnerabilidades en LLMs]
-
-    #summary[Para el sistema de orquestación de IA multiagente, implementé un sistema de explotación de vulnerabilidades en LLMs y ]
-
-    - dsads
+    - 62\% de grounding on-device y 85\% de seguimiento sostenido pese a movimiento y oclusión
 
   ],
   [
@@ -222,13 +246,19 @@ Ingeniero Informático especializado en Ciberseguridad a través de un Doble Má
 
 #strong[Inglés:] Cambridge C1
 
+#strong[Francés:] DELF B2
+
 == Competencias Técnicas
 
-#strong[Lenguajes:] Java, TypeScript, Python, C++
+#strong[Web:] HTML, CSS, JavaScript, GSAP, Svelte 5, SvelteKit, React
 
-#strong[Frameworks:] Spring Boot, Svelte 5, SvelteKit, React Native
+#strong[Lenguajes:] TypeScript, Java, Python, C++
 
-#strong[Infra:] Git, Kubernetes, Docker, AWS, Amazon Lambda
+#strong[Backend:] Spring Boot, PostgreSQL
+
+#strong[Control de versiones:] Dominio total de Git y GitHub (¡échale un ojo a #link("https://github.com/jfdg01")[#underline(offset: 1.3pt, stroke: 1.1pt)[mi GitHub]]!)
+
+#strong[Infra:] Docker, Kubernetes, AWS
 
 == Otras Competencias Relevantes
 
@@ -255,5 +285,16 @@ Ingeniero Informático especializado en Ciberseguridad a través de un Doble Má
   [
     Feb 2026
 
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Ritmo de trabajo]
+
+    #summary[¡Trabajo rápido! Itero y entrego sin sacrificar calidad: monté una landing demo de Spider-Man: Brand New Day con GSAP en un solo día]
+
+  ],
+  [
   ],
 )
