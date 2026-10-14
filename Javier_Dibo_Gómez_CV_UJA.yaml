@@ -28,6 +28,7 @@ cv:
         location: Jaén, España
         highlights:
           - "Máster habilitante en Ingeniería Informática + Máster en Ciberseguridad"
+          - "Nota media: 8,25 (primer curso completo, 60 créditos)"
           - "Asignaturas afines: Auditoría y Seguridad en Sistemas de la Información, Computación Distribuida (Open MPI, Apache Spark), Sistemas Empotrados y Ubicuos"
       - institution: Universidad de Jaén
         area: Ingeniería Informática
@@ -37,7 +38,7 @@ cv:
         location: Jaén, España
         highlights:
           - "Especialización en Ingeniería del Software e Informática Empresarial"
-          # TODO: añadir la nota media del expediente (suele puntuar en el baremo)
+          - "Trabajo Fin de Grado: Sobresaliente (9,0)"
 
     Sistemas e Infraestructura:
       - label: Linux
