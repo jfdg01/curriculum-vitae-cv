@@ -1,0 +1,141 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+# Versión orientada a la plaza técnica del CEATIC (Universidad de Jaén).
+# El CV general sigue en Javier_Dibo_Gómez_CV.yaml.
+# Render: rendercv render Javier_Dibo_Gómez_CV_UJA.yaml
+cv:
+  name: Javier Dibo Gómez
+  location: Jaén, España
+  email: contacto@dibogomez.com  # OJO: los correos salen desde contact@ — confirma cuál es el bueno
+  phone: +34 622386406
+  website: https://dibogomez.com
+  social_networks:
+    - network: LinkedIn
+      username: jfdg01
+    - network: GitHub
+      username: jfdg01
+  sections:
+
+    Perfil:
+      - "Ingeniero Informático por la Universidad de Jaén, cursando el Doble Máster en Ingeniería Informática y Ciberseguridad.
+        Experiencia práctica administrando servidores Linux, desplegando servicios en la nube y ejecutando modelos de IA en hardware embarcado (NVIDIA Jetson)."
+
+    Formación Académica:
+      - institution: Universidad de Jaén
+        area: Ingeniería Informática y Ciberseguridad
+        degree: Doble Máster
+        start_date: 2025-09
+        end_date: present
+        location: Jaén, España
+        highlights:
+          - "Máster habilitante en Ingeniería Informática + Máster en Ciberseguridad"
+          - "Asignaturas afines: Auditoría y Seguridad en Sistemas de la Información, Computación Distribuida (Open MPI, Apache Spark), Sistemas Empotrados y Ubicuos"
+      - institution: Universidad de Jaén
+        area: Ingeniería Informática
+        degree: Grado
+        start_date: 2020-09
+        end_date: 2025-06
+        location: Jaén, España
+        highlights:
+          - "Especialización en Ingeniería del Software e Informática Empresarial"
+          # TODO: añadir la nota media del expediente (suele puntuar en el baremo)
+
+    Sistemas e Infraestructura:
+      - label: Linux
+        details: "Administración de servidores Ubuntu, systemd, SSH (claves ed25519, permisos endurecidos) y scripting en Bash"
+      - label: Nube y despliegue
+        details: "VPS en Oracle Cloud, Cloudflare Tunnel, despliegue automatizado con rsync + systemd y verificación de salud por HTTP"
+      - label: Contenedores
+        details: Docker, Kubernetes, AWS
+      - label: Cómputo distribuido
+        details: "Open MPI (C), Apache Spark (Scala)"
+      - label: Edge-AI y GPU
+        details: "NVIDIA Jetson Orin Nano, llama.cpp, cuantización y despliegue de modelos on-device"
+      - label: Seguridad
+        details: "Análisis forense de metadatos (ExifTool), auditoría de sistemas de información"
+
+    Proyectos Destacados:
+      - name: "TFM — Un dron que pilotas hablándole ([#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/jetson))"
+        summary: "*Edge-AI: das una orden en lenguaje natural y el dron detecta, sigue y encuadra el objetivo, todo en el dispositivo*"
+        highlights:
+          - "Qwen2-VL-2B afinado y cuantizado (1.65 GB) desplegado sobre Jetson Orin Nano a 15 W, sin nube"
+          - "Campañas de medición reproducibles en la placa: 62% de grounding on-device y 85% de seguimiento sostenido pese a movimiento y oclusión"
+
+      - name: "Rebusca ([#underline(offset: 1.3pt, stroke: 1.1pt)[rebusca.dibogomez.com]](https://rebusca.dibogomez.com) · [#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/rebusca))"
+        summary: "*Cazador de chollos de Wallapop, en producción 24/7 en un VPS propio*"
+        highlights:
+          - "Servicio systemd en un VPS de Oracle Cloud expuesto mediante Cloudflare Tunnel"
+          - "Script de despliegue: rsync, reinstalación del unit, reinicio y comprobación HTTP que aborta si el servicio no responde"
+          - "Servidor en Python de librería estándar, cero dependencias; frontend vanilla JS sin build"
+
+      - name: "TFG — Gestor de academias ([#underline(offset: 1.3pt, stroke: 1.1pt)[github.com]](https://github.com/jfdg01/academy-management-app))"
+        summary: "*Plataforma full-stack de gestión de academia: matrícula, calificaciones y pagos*"
+        highlights:
+          - "Java 21 + Spring Boot 3.5, SvelteKit y PostgreSQL; control de acceso por roles y pagos con Stripe"
+          - "Gestión de 1000 usuarios concurrentes"
+
+      - name: "Portfolio artístico ([#underline(offset: 1.3pt, stroke: 1.1pt)[cardenaspacheco.es]](https://cardenaspacheco.es))"
+        summary: "*Web de presentación de obra para la artista Carmen Cárdenas Pacheco*"
+        highlights:
+          - "Svelte 5 y Vercel Edge; Lighthouse 95+ sirviendo imágenes originales de más de 5 MB"
+
+    Experiencia Laboral:
+      - company: Tienda de alimentación familiar "Los Argentinos"
+        position: Dependiente a tiempo parcial
+        start_date: 2019-07
+        end_date: present
+        location: Jaén, España
+        summary: "Compatibilizo mis estudios con el trabajo en el negocio familiar desde el inicio de mi etapa universitaria"
+        highlights:
+          - "Atención al cliente, resolución de incidencias, responsabilidad sobre caja y organización"
+
+    Idiomas:
+      - label: Español
+        details: Nativo
+      - label: Inglés
+        details: Cambridge C1
+      - label: Francés
+        details: DELF B2
+
+    Otras Competencias Técnicas:
+      - label: Lenguajes
+        details: Python, Java, C, C++, TypeScript, Bash
+      - label: Desarrollo
+        details: Spring Boot, PostgreSQL, Svelte / SvelteKit, React
+      - label: Control de versiones
+        details: "Git y GitHub ([#underline(offset: 1.3pt, stroke: 1.1pt)[github.com/jfdg01]](https://github.com/jfdg01))"
+
+    Otros Méritos:
+      - name: Divulgación
+        summary: 'Ponente en el Google Developer Group (GDG) con la charla "Cómo introducirse a la ciberseguridad", ante 70 personas'
+        date: 2026-02
+      - name: "Artes marciales"
+        summary: "Cinturón azul en Kung Fu: disciplina, constancia y concentración"
+        start_date: 2023
+        end_date: present
+
+design:
+  theme: classic
+  templates:
+    education_entry:
+      main_column: |-
+        **DEGREE** en *AREA*, INSTITUTION
+        SUMMARY
+        HIGHLIGHTS
+      degree_column: null
+      date_and_location_column: |-
+        LOCATION
+        DATE
+  page:
+    size: a4
+    show_top_note: true
+locale:
+  language: spanish
+settings:
+  current_date: "2026-10-14"
+  render_command:
+    typst_path: ./rendercv_output/Javier_Dibo_Gómez_CV_UJA.typ
+    pdf_path: ./rendercv_output/Javier_Dibo_Gómez_CV_UJA.pdf
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
+  bold_keywords: []
